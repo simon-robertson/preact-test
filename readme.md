@@ -14,7 +14,7 @@ While the switch from React to Preact was a fairly painless one, there were a fe
 
 ### babel
 
-When building a React based application I use the `@babel/preset-react` preset, but for Preact that needed to be replace with the `@babel/transform-react-jsx` plugin. The `jsxPragma` had to also be set for the `@babel/preset-typescript` preset.
+When building a React based application I use the `@babel/preset-react` preset, but for Preact that needed to be replace with the `@babel/plugin-transform-react-jsx` plugin. The `jsxPragma` had to also be set for the `@babel/preset-typescript` preset.
 
 ```
 const pluginJSX = [

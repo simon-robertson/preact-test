@@ -36,7 +36,7 @@ setImmediate(run)
  */
 function compile(source, output) {
     const pluginJSX = [
-        "@babel/transform-react-jsx", {
+        "@babel/plugin-transform-react-jsx", {
             pragma: "h"
         }
     ]
