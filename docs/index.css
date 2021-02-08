@@ -13,6 +13,14 @@ body {
     min-height: 80vh;
     overflow: hidden;
 }
+.application-footer {
+    padding: 40px 0;
+    background-color: var(--footer-background-color);
+}
+
+.application-footer p {
+    margin: 0;
+}
 .application-header {
     padding: 80px 0;
     color: rgb(0, 0, 0);
@@ -30,14 +38,6 @@ body {
 .application-header p {
     margin: 0;
 }
-.application-footer {
-    padding: 40px 0;
-    background-color: var(--footer-background-color);
-}
-
-.application-footer p {
-    margin: 0;
-}
 .article {
     margin: 40px 0;
 }
@@ -51,7 +51,14 @@ body {
 
 .article button {
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: inherit;
+    line-height: 1;
+}
+
+.article input {
+    width: 300px;
+    padding: 10px 20px;
+    font-size: inherit;
     line-height: 1;
 }
 .container {

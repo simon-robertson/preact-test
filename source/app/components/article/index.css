@@ -11,6 +11,13 @@
 
 .article button {
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: inherit;
+    line-height: 1;
+}
+
+.article input {
+    width: 300px;
+    padding: 10px 20px;
+    font-size: inherit;
     line-height: 1;
 }
