@@ -34,7 +34,7 @@ Apart from that my usual build process remained the same.
 
 ### eslint
 
-The `eslint-react-plugin` needed the `"pragma"` set to `"h"`. No doubt the Preact team will release an official plugin at some point, but for now the React one works fine. The only issue here is you may see a warning from the plugin regarding the React version, but that can be safely ignored.
+The `eslint-react-plugin` was needed and the `"pragma"` set to `"h"` for avoid "unused variable" warnings; but that makes sense. No doubt the Preact team will release an official plugin at some point, but for now the React one works fine. The only issue here is you may see a warning from the plugin regarding the React version, but that can be safely ignored.
 
 ```
 "settings": {
@@ -43,6 +43,17 @@ The `eslint-react-plugin` needed the `"pragma"` set to `"h"`. No doubt the Preac
     }
 },
 ```
+
+In the TypScript environment I did need to disable these rules:
+
+```
+"react/no-unknown-property": "off",
+"react/prop-types": "off",
+```
+
+The `no-unknown-property` rule, when enabled, warns about the use of the JSX `class` attribute which Preact recommends using. The `prop-types` rule is not needed in TypeScript, those are defined by types or interfaces instead of using the `prop-types` library.
+
+But again, the plugin is designed for React not Preact, so it's all good.
 
 ### jsx
 
