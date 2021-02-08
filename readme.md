@@ -18,7 +18,7 @@ When building a React based application I use the `@babel/preset-react` preset, 
 
 ```
 const pluginJSX = [
-    "@babel/transform-react-jsx", {
+    "@babel/plugin-transform-react-jsx", {
         pragma: "h"
     }
 ]
