@@ -1,6 +1,6 @@
 # preact-test
 
-This is a simple web application that I created to try the [Preact](https://github.com/preactjs/preact) library - I have used my typical dev environment which includes Babel, TypeScript, and Webpack. Visual Studio Code my editor of choice.
+This is a simple web application that I created to try the [Preact](https://github.com/preactjs/preact) library - I have used my typical dev environment which includes Babel, TypeScript, and Webpack.
 
 ---
 
