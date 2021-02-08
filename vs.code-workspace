@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "name": "(src) app",
+            "path": "source/app"
+        },
+        {
+            "name": "scripts",
+            "path": "scripts"
+        },
+        {
+            "name": "template",
+            "path": "template"
+        }
+    ]
+}

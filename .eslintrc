@@ -1,0 +1,59 @@
+{
+    "root": true,
+    "overrides": [
+        {
+            "files": [
+                "scripts/**/*.js"
+            ],
+            "extends": [
+                "eslint:recommended"
+            ],
+            "parserOptions": {
+                "sourceType": "module"
+            },
+            "env": {
+                "es2020": true,
+                "node": true
+            },
+            "rules": {
+                "comma-dangle": ["error", "never"],
+                "indent": ["error", 4],
+                "quotes": ["error", "double"],
+                "semi": ["error", "never"]
+            }
+        },
+        {
+            "files": [
+                "source/**/*.ts",
+                "source/**/*.tsx"
+            ],
+            "plugins": [
+                "@typescript-eslint",
+                "react"
+            ],
+            "extends": [
+                "eslint:recommended",
+                "plugin:@typescript-eslint/recommended",
+                "plugin:react/recommended"
+            ],
+            "parser": "@typescript-eslint/parser",
+            "settings": {
+                "react": {
+                    "pragma": "h"
+                }
+            },
+            "rules": {
+                "comma-dangle": "off",
+                "indent": "off",
+                "quotes": "off",
+                "semi": "off",
+                "react/no-unknown-property": "off",
+                "react/prop-types": "off",
+                "@typescript-eslint/comma-dangle": ["error", "never"],
+                "@typescript-eslint/indent": ["error", 4],
+                "@typescript-eslint/quotes": ["error", "double"],
+                "@typescript-eslint/semi": ["error", "never"]
+            }
+        }
+    ]
+}

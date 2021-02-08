@@ -1,0 +1,8 @@
+.application-footer {
+    padding: 40px 0;
+    background-color: var(--footer-background-color);
+}
+
+.application-footer p {
+    margin: 0;
+}

@@ -1,0 +1,17 @@
+.application-header {
+    padding: 80px 0;
+    color: rgb(0, 0, 0);
+    background-color: var(--header-background-color);
+}
+
+.application-header h1 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.application-header p {
+    margin: 0;
+}
