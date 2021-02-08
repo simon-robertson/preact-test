@@ -34,7 +34,7 @@ Apart from that my usual build process remained the same.
 
 ### eslint
 
-The `eslint-react-plugin` was needed and the `"pragma"` set to `"h"` for avoid "unused variable" warnings; but that makes sense. No doubt the Preact team will release an official plugin at some point, but for now the React one works fine. The only issue here is you may see a warning from the plugin regarding the React version, but that can be safely ignored.
+The `eslint-react-plugin` was needed and the `"pragma"` set to `"h"` to avoid "unused variable" warnings; but that makes sense. No doubt the Preact team will release an official plugin at some point, but for now the React one works fine. The only issue here is you may see a warning from the plugin regarding the React version, but that can be safely ignored.
 
 ```
 "settings": {
